@@ -1,0 +1,14 @@
+<div class="border border-red-600 m-4">
+
+    <h1>This is parent component</h1>
+  
+    <h3>Messge from child compo: {{messgeFromChildComp}}</h3>
+
+
+    <input (change)="inputChanged($event)"
+         class="border bg-red-50" />
+
+  <app-child [value]="inputValue"
+             (childMessage)="childMessageEventHandler($event)"></app-child>
+  
+  </div>
